@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+:root{font-family:'Plus Jakarta Sans',sans-serif;color:#0f172a;background:#f1f5f9}
+*{box-sizing:border-box}
+body{margin:0;background:#f1f5f9;font-family:'Plus Jakarta Sans',sans-serif;color:#0f172a}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+.auth-shell{background:radial-gradient(circle at top right,rgba(220,38,38,.12),transparent 45%),#f8fafc}
+.auth-card{background:#fff;box-shadow:0 20px 45px -10px rgba(15,23,42,.08)}
+.auth-input{transition:all .2s ease-in-out}
+.auth-input:focus{border-color:#dc2626;box-shadow:0 0 0 3px rgba(220,38,38,.16);outline:none}
+.account-type-card:has(input:checked){border-color:#dc2626;background:#fef2f2}
+.badge-yellow{background:#fee2e2;color:#991b1b}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:#f8fafc}
+::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:6px}
+::-webkit-scrollbar-thumb:hover{background:#94a3b8}
+.no-scrollbar::-webkit-scrollbar{display:none}
+.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
+/* Always display two machine cards per row while grid mode is selected. */
+#equipment-results-container.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+#equipment-results-container.grid>*{min-width:0}
+@media(max-width:420px){#equipment-results-container.grid{gap:.5rem}#equipment-results-container.grid img{height:6rem}#equipment-results-container.grid h4{white-space:normal}}
+#admin-analytics-chart{min-height:11rem}
